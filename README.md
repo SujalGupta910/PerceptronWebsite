@@ -1,6 +1,8 @@
 #  Perceptron Playground
 Flask Python website to generate and play around with a simple McCulloh-Pitts perceptron model
 
+![Website Screenshot](https://github.com/SujalGupta910/PerceptronWebsite/blob/main/PerceptronWebsite.png)
+
 The frontend is based on pure HTML/CSS and Javascript
 
 The backend is written in python and uses the PIL library for image generation and APScheduler for scheduling regular directory clean-up
