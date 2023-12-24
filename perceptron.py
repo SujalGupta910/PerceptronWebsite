@@ -1,7 +1,8 @@
 import numpy as np
 
 class Perceptron :
-    def __init__(self,input_vector,weights,threshold) :
+    def __init__(self,input_vector,weights,threshold,title) :
+        self.title = title
         input_vector.append(1)
         self.input_vector = np.array(input_vector)
         # adding a random bias for magic
@@ -9,8 +10,8 @@ class Perceptron :
         weights.append(self.bias)
         self.weights = np.array(weights)
         self.threshold = threshold
+        self.dot_product = np.dot(self.weights,self.input_vector)
 
     def predict(self):
-        output = np.dot(self.weights,self.input_vector)
-        return 1 if output >= self.threshold else 0
+        return 1 if self.dot_product >= self.threshold else 0
     

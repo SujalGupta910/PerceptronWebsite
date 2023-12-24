@@ -7,12 +7,20 @@ function addInputValue() {
 }
 
 function fillRandomWeights(){
-    var vectorValues = document.querySelectorAll('.vectorValue')
+    var vectorValues = document.querySelectorAll('.vectorValue');
     vectorValues.forEach( function (element){
         var weight = element.querySelector('.weight');
         if(weight.value==="") {
             weight.value = Math.floor(Math.random()*11)-5;
         }
+    });
+}
+
+function clearWeights(){
+    var vectorValue = document.querySelectorAll('.vectorValue');
+    vectorValue.forEach(function (element) {
+        var weight = element.querySelector('.weight');
+        weight.value = "";
     });
 }
 

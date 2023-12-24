@@ -53,7 +53,7 @@ def run_perceptron():
         input_vector[i] = inp['value']
         weights[i] = inp['weight']
     
-    perc = Perceptron(input_vector,weights,threshold)
+    perc = Perceptron(input_vector,weights,threshold,title)
     output = perc.predict()
     
     timestamp = int(time.time())
